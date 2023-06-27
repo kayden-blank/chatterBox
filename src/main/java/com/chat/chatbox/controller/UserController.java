@@ -35,6 +35,7 @@ public class UserController {
     }
     @PostMapping("/createPost")
     public  Post createPost(@RequestBody Post post){
+
         return  userService.addPost(post);
     }
 
